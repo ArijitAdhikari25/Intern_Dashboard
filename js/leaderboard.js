@@ -1,5 +1,5 @@
 
-fetch('http://localhost:5000/api/leaderboard')
+fetch('https://intern-dashboard-backend-6dlu.onrender.com/api/leaderboard')
   .then(res => res.json())
   .then(data => {
     const table = document.querySelector('#leaderboard-table tbody');

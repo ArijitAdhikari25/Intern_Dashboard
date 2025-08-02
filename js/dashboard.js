@@ -1,4 +1,4 @@
-fetch('http://localhost:5000/api/user')
+fetch('https://intern-dashboard-backend-6dlu.onrender.com/api/user')
   .then(res => res.json())
   .then(data => {
     document.getElementById('welcome').textContent = `Welcome, ${data.name}`;
