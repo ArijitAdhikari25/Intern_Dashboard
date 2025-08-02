@@ -1,0 +1,182 @@
+/* Base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  margin: 0;
+  padding: 2rem;
+  color: #333;
+}
+
+/* Containers */
+.auth-container, .dashboard-container {
+  max-width: 700px;
+  margin: auto;
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+/* Auth Background */
+.auth-bg {
+  background: linear-gradient(120deg, #89f7fe, #66a6ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+  margin: 0;
+}
+
+/* Auth Card */
+.auth-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+/* Subtitle */
+.subtitle {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* Inputs */
+.auth-input {
+  width: 90%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: 0.2s ease;
+}
+
+.auth-input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Button */
+.auth-card button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #3498db;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.auth-card button:hover {
+  background-color: #2980b9;
+}
+
+/* Switch Link */
+.auth-switch {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+/* Headings */
+h1, h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Links */
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Rewards */
+.rewards ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.rewards li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  padding: 0.4rem;
+  background: #ecf0f1;
+  border-radius: 8px;
+}
+
+/* Leaderboard table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+}
+
+th {
+  background-color: #34495e;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  .auth-container, .dashboard-container {
+    padding: 1.5rem;
+  }
+
+  th, td {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+  }
+}
