@@ -161,22 +161,17 @@ tr:hover {
 }
 
 /* Responsive tweaks */
-@media (max-width: 600px) {
-  body {
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .auth-card, .dashboard, .leaderboard {
     padding: 1rem;
   }
 
-  .auth-container, .dashboard-container {
-    padding: 1.5rem;
+  .reward-card {
+    flex: 1 1 100%;
   }
 
-  th, td {
-    padding: 0.75rem;
+  table {
     font-size: 0.9rem;
-  }
-
-  button {
-    padding: 0.6rem 1rem;
-    font-size: 0.95rem;
   }
 }
